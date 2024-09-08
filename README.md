@@ -2,6 +2,67 @@
 
 
 
+## Infraestrutura AWS com Terraform
+
+
+Este projeto demonstra como criar e gerenciar uma infraestrutura na AWS utilizando Terraform.
+ A infraestrutura inclui uma VPC (Virtual Private Cloud), subnets públicas e privadas, NAT Gateway, Internet Gateway, instâncias EC2, e uma instância do Amazon RDS para banco de dados, tudo configurado como código.
+
+
+## Estrutura do Projeto
+A infraestrutura criada é composta pelos seguintes componentes:
+
+**VPC (Virtual Private Cloud):** Cria uma rede isolada para hospedar os recursos de forma segura.
+
+**Subnets Públicas e Privadas:** Define subnets para separar os recursos que precisam estar acessíveis pela internet daqueles que devem permanecer privados.
+
+**Internet Gateway:** Permite que as instâncias nas subnets públicas tenham acesso à internet.
+
+**NAT Gateway:** Permite que as instâncias nas subnets privadas acessem a internet de forma segura, sem ficarem diretamente acessíveis.
+
+**Security Groups:** Define regras de firewall para controlar o tráfego de entrada e saída das instâncias.
+
+**EC2 (Elastic Compute Cloud):** Cria instâncias virtuais para hospedar aplicações e gerenciar workloads diversos.
+
+**Amazon RDS (Relational Database Service):** Configura um banco de dados relacional escalável e altamente disponível, com réplicas em subnets privadas para maior segurança e redundância.
+
+## Pré-requisitos
+Terraform instalado na máquina.
+
+Uma conta na AWS com permissões suficientes para criar os recursos descritos.
+
+Chave SSH configurada para acessar as instâncias EC2.
+
+
+## Como Executar
+Clone o repositório para a sua máquina local:
+
+Acesse o diretório do projeto:
+
+Inicialize o Terraform:
+terraform init
+
+Visualize o plano de execução para revisar as mudanças que serão aplicadas:
+terraform plan
+
+Aplique o plano para provisionar a infraestrutura:
+terraform apply
+
+
+Confirme a aplicação digitando *yes* quando solicitado.
+
+
+## Como Usar
+Após a execução bem-sucedida do Terraform, a infraestrutura estará provisionada na AWS.
+ Você pode acessar as instâncias EC2 utilizando a chave SSH configurada e utilizar o banco de dados RDS conforme necessário.
+
+## A documentação do código foi gerada automaticamente com o terraform-docs e está disponível abaixo:
+
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK --> <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
