@@ -1,3 +1,7 @@
+![Descrição da Imagem](https://github.com/Lopeswaprojetos/Terrform-AWS-RDS-VPC-EC2/blob/main/infraestrutura.png..png?raw=true)
+
+
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
