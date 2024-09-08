@@ -39,15 +39,19 @@ Clone o repositório para a sua máquina local:
 
 Acesse o diretório do projeto:
 
+*https://github.com/Lopeswaprojetos/Terrform-AWS-RDS-VPC-EC2.git*
+
 Inicialize o Terraform:
-terraform init
+
+*terraform init*
 
 Visualize o plano de execução para revisar as mudanças que serão aplicadas:
-terraform plan
+
+*terraform plan*
 
 Aplique o plano para provisionar a infraestrutura:
-terraform apply
 
+*terraform apply*
 
 Confirme a aplicação digitando *yes* quando solicitado.
 
