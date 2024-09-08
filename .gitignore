@@ -1,0 +1,2 @@
+# Ignorar diretório .terraform (onde o Terraform armazena o estado local e os plugins baixados)
+.terraform/
